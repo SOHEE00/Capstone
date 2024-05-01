@@ -520,7 +520,78 @@ header .badges .badge{
     flex-grow : 1; /*최대한의 넓이로 늘어남*/
   }
 
+  /*첫번째 메인 섹션 */
   
+  .promotion  .main01, .main02{
+    width: 1440px;
+    height: 1026px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; /* 페이지 중앙 정렬 */
+    margin-top: -200px;
+   
+}
+
+
+.promotion  .main01_inner, .main02_inner{
+    width: 1088px;
+    height: 600px;
+     /* 내부 박스 배경색 */
+    display: flex; /* 내부 div를 가로로 배치 */
+}
+.promotion .main01 .section {
+    width: 100%; /* 각 섹션의 너비 */
+    display: relative;
+   
+    
+}
+.promotion .main01 .section a {
+  margin-left: 150px;
+  color : #393939;
+}
+.promotion  .section:first-child {
+    width: 460px; /* 첫 번째 영역 너비 */
+     /* 배경색 */
+}
+
+.promotion  .main01_inner .section img {
+    width: 100%; /* 섹션 너비에 맞게 이미지 크기 조절 */
+    height: 100%; /* 섹션 높이에 맞게 이미지 크기 조절 */
+    object-fit: cover; /* 이미지 비율을 유지하면서 섹션을 꽉 채움 */
+}
+
+
+
+.promotion  .section:first-child>h2{
+    line-height: 1.5;
+    font-size: 36px;
+    margin: 70px 50px 70px 50px;
+    
+}
+
+.promotion  .section:first-child>p{
+    line-height: 2;
+    font-size: 17px;
+    margin: 0 50px 70px 50px;
+}
+
+#roundButton01{
+    margin: 0 50px 0 50px;
+}
+
+
+
+.promotion  .section:nth-child(2) {
+    width: 173px; /* 두 번째 영역 너비 */
+     /* 배경색 */
+}
+.promotion  .section:last-child {
+    width: 460px; /* 세 번째 영역 너비 */
+     /* 배경색 */
+}
+
 
   /*SEASON PRODUCT*/
 
@@ -603,7 +674,9 @@ header .badges .badge{
     position : absolute;
     top : 110px;
     left :0;
+
   }
+  
   .reserve-coffee .text-group {
     position: absolute;
     top : 124px;
