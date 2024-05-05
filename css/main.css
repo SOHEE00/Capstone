@@ -603,14 +603,19 @@ header .badges .badge{
     height : 400px;
     display: flex;
     justify-content: center;
+    margin-left: 30px;
+    position: relative;
 
   }
   .season-product .inner  .section .image-container{
     display: flex;
     justify-content: center;
     /*justify-content: space-between;*/
-    width: 100%; /* 이미지 컨테이너의 폭 조정 */
-    margin: 0 auto; /* 가운데 정렬 */
+    width: 50%; /* 이미지 컨테이너의 폭 조정 */
+    
+  }
+  .season-product .inner  .section {
+    position: absolute;
     
   }
   .season-product .inner  .section .image-container img {
@@ -632,10 +637,8 @@ header .badges .badge{
 }
   .season-product .inner .section .text-group {
     position : absolute;
-    top : 0;
-    right : 0;
     display: flex; /* 내부 요소를 플렉스 박스로 설정 */
-    align-items: center; /* 내부 요소를 수직으로 가운데 정렬 */
+    
   }
   .season-product .inner .section .text-group  {
     position : relative;
@@ -925,3 +928,8 @@ header .badges .badge{
     float: right;
     margin-top : -50px;
   }
+
+
+
+
+  
