@@ -1,23 +1,27 @@
 body {
-    background-size: auto;
     color : #333;
     font-size : 16px;
     font-weight : 400;
     line-height : 1.4;
     font-family: 'NotoSansKR-Regular', sans-serif;
     background-color: #ffff;
-
+    background-size: 1440px;
 }
 
 
 
 h1 {
     font-weight: bold;
+    color : #3F3F3F;
   }
-  p {
+h3 {
+  color : #595959;
+}
+p {
     line-height : 1.8;
     font-size : 18px;
-  }
+    color : #3F3F3F;
+}
   img {
       display: block;
       
@@ -46,14 +50,29 @@ h1 {
       display : block;
       
   }
-  
+  .btn1 {
+    width : 130px;
+    padding : 10px;
+    background-color: #444859;
+    border-radius: 20px;
+    color : #ffff;
+    font-size : 16px;
+    font-weight: 700;
+    text-align : center;
+    cursor : pointer;
+    box-sizing : border-box;
+    display : block;
+    
+}
+
 
   
   
   /*HEADER*/
   header {
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       width : 100%;
-      background-color : #F7E600;
+      background-color : #ffffff;
       /*position: relative;*/
       position : fixed; /*브라우저의 뷰포트 기준 배치*/
       z-index : 9; /*덮이지 않도록 숫자를 높게 설정해서*/
@@ -62,6 +81,7 @@ h1 {
   header > .inner {
       width : 1100px;
       height : 120px;
+      background-color : #ffffff;
       margin : 0 auto;
       position: relative;
       display: flex; /* 내부 요소를 플렉스 박스로 설정 */
@@ -86,6 +106,10 @@ h1 {
       margin : auto;
       
   }
+  header .sub-menu .btn {
+    color : #444859;
+    
+}
   header .sub-menu ul.menu {
       font-family : Arial, sans-serif;
       display : flex;
@@ -122,7 +146,11 @@ h1 {
   header .sub-menu .search {
     height : 34px;
     position : relative;
+    color : #444859;
   }
+
+
+
   header .sub-menu ul.menu .search {
     height : 34px;
     position : relative;
@@ -213,90 +241,87 @@ h1 {
       cursor : pointer;
   }
   
-  .promotion  .main01_inner, .main02_inner{
-    width: 1088px;
-    height: 600px;
-     /* 내부 박스 배경색 */
-    display: flex; /* 내부 div를 가로로 배치 */
-}
-.promotion .main01 .section {
-    width: 100%; /* 각 섹션의 너비 */
-    display: relative;
-   
-    
-}
-.promotion .main01 .section a {
-  margin-left: 150px;
-  color : #393939;
-}
-.promotion  .section:first-child {
-    width: 460px; /* 첫 번째 영역 너비 */
-     /* 배경색 */
-}
-
-.promotion  .main01_inner .section img {
-    width: 100%; /* 섹션 너비에 맞게 이미지 크기 조절 */
-    height: 100%; /* 섹션 높이에 맞게 이미지 크기 조절 */
-    object-fit: cover; /* 이미지 비율을 유지하면서 섹션을 꽉 채움 */
-}
-
-
-
-.promotion  .section:first-child>h2{
-    line-height: 1.5;
-    font-size: 36px;
-    margin: 70px 50px 70px 50px;
-    
-}
-
-.promotion  .section:first-child>p{
-    line-height: 2;
-    font-size: 17px;
-    margin: 0 50px 70px 50px;
-}
-
-#roundButton01{
-    margin: 0 50px 0 50px;
-}
-
-
-
-.promotion  .section:nth-child(2) {
-    width: 173px; /* 두 번째 영역 너비 */
-     /* 배경색 */
-}
-.promotion  .section:last-child {
-    width: 460px; /* 세 번째 영역 너비 */
-     /* 배경색 */
-}
-
-
 /*VISUAL*/
 .visual {
     margin-top: 120px;
     background-color: #F7E600;
     width : 100%;
+    height: 600px;
     background-position: center;
+    
   }
   .visual .inner {
+    position: relative;
     height: 500px;
     font-size : 15px;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 가로 방향으로 가운데 정렬 */
   }
-  .visual .inner .fade-in {
-    margin : 70px;
+  
+  
+  .visual .fade-in_ {
+    position: absolute;
+    margin : 0 auto;
+  }
+  .visual .fade-in_ h1 {
+    margin-top: -130px;
+    font-size: 45px;
+  }
+  
+  .visual .fade-in {
+    margin-top : 100px;
+    justify-content: center;
+    display: flex;
+    align-items: center; /* 세로 정렬을 중앙에 위치시킵니다. */
+  }
+  .visual .fade-in >* {
+    margin-bottom: -50px;
+  }
+  .visual .fade-in1 {
+    justify-content: center;
+    display: flex;
+    align-items: center; /* 세로 정렬을 중앙에 위치시킵니다. */
+    margin: 0 auto;
+  }
+  .visual .fade-in1 > * {
+    margin : 100px;
+    margin-top : -80px;
+  }
+  
+  
+  
+
+
+
+
+
+  .visual .inner .fade-in .plclass {
+    justify-content: center;
+    margin : 0 auto;
   }
   .visual .inner .fade-in h1 {
     font-size : 50px;
   }
-  .visual .inner .title .fade-in p {
-    
+  .visual .inner .fade-in h3 {
+    justify-content: center;
+    margin-left : 50px;
+
   }
+  
+ 
   .visual .title {
     position: absolute;
     top: 88px;
     left: -10px;
+    display: flex;
+    text-align: center; /* 텍스트를 가운데 정렬 */
+ 
   }
+  .visual .title p {
+    text-align: center; /* p 태그 내부 텍스트를 가운데 정렬 */
+   
+}
   .visual .title .btn {
     position: absolute;
     top: 259px;
@@ -307,15 +332,18 @@ h1 {
     bottom: 40px;
     right: -47px;
   }
+  
   .visual .cup1.text {
     position: absolute;
     top: 38px;
     right: 171px;
   }
+  
   .visual .cup2.image {
     position: absolute;
     bottom: 0;
     right: 162px;
+    text-align: center;
   }
   .visual .cup2.text {
     position: absolute;
@@ -331,9 +359,6 @@ h1 {
     top : -80px;
   }
 
-  .notice {
-
-  }
   .notice .notice-line {
     position : relative;
   }
@@ -354,21 +379,25 @@ h1 {
     background-color: #f6f5ef;
   }
   .notice .notice-line .inner {
-    top : -70px;
+    position : absolute;
     height : 138px;
-    width : 1310px;
+    width : 100%;
+    
     display : flex;
     /* 자식요소 수평 display : flex; */
     
+    
   }
   
+  
   .notice .notice-line .inner_left .con {
-      height : 80px;
-      width: 1310px;
+    position : absolute;
+    height : 160px;
+      width : 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px; /* 패딩 설정 */
+       /* 패딩 설정 */
       background-color: #fff; /* 컨테이너 배경색 */
       box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
       border-radius: 10px;
@@ -376,15 +405,22 @@ h1 {
   .notice .notice-line .inner_left .con .item {
       flex-grow: 1; /* 모든 항목이 동등하게 공간 차지 */
       text-align: center; /* 텍스트 중앙 정렬 */
-      padding: 10px; /* 항목 내부 패딩 */
+      align-items: center;
+      
+      padding: 50px; /* 항목 내부 패딩 */
       font-size: 16px; /* 글자 크기 */
       color: #333; /* 글자 색상 */
+      margin-left: 50px;
   }
   
   .notice .notice-line .inner_left .con .item a{
     color : #3f3f3f;
     font-size : 20px;
-    margin-right : 40px; 
+    
+  }
+  .notice .notice-line .inner_left .con .item img {
+    margin: 10px;
+    margin-left: 35px;
   }
   .notice .notice-line .inner_left .con .item a:hover {
     color : #000;
@@ -518,13 +554,7 @@ h1 {
   
 
 
-
-
-
-
-
-
-.rounded-button {
+  .rounded-button {
     width: 258px;
     height: 78px;
     border-radius: 50px;
@@ -566,350 +596,238 @@ h1 {
     /*background-color: 2A2D3A;*/
 }
 
-.image-container {
-    display: flex;
-    /*justify-content: space-between;*/
-    width: 100%; /* 이미지 컨테이너의 폭 조정 */
-    background-color: aqua;
-    
-    height: 100%; /* 섹션 높이에 맞게 이미지 크기 조절 */
-    object-fit: cover; /* 이미지 비율을 유지하면서 섹션을 꽉 채움 */
-}
-.image-container img {
-    /*width: 30%; /* 이미지 폭 조정 */
-    transition: transform 0.3s ease; /* 확대 애니메이션 효과 */
-}
-.image-container img:hover {
-    transform: scale(1.2); /* 확대 */
-}
-
-.image-container img:first-child{
-    width:100%;
-
-}
-
-.image-container img:nth-child(2){
-    width:100%;
-
-}
-
-.image-container img:last-child{
-    width:100%;
-}
-
-
 
 .main01 {
-    position: relative; /* 또는 absolute */
-    top: -80px;
+  top : 30px;
+  position: relative; /* 또는 absolute */
+}
+.main01, .main02, .main03, .main04 .main05{
+  width: 1440px;
+  height: 700px;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; /* 페이지 중앙 정렬 */
+}
+.main01_inner, .main02_inner,.main03_inner, .main04_inner .main05_inner{
+  position: relative;
+  width: 1088px;
+  margin : 0 auto;
+  height: 500px;
+  background-color: #ddd; /* 내부 박스 배경색 */
+  display: flex; /* 내부 div를 가로로 배치 */
+}
+.main01_inner .section {
+  position : absolute;
+  width: 100%;
+}
+.main01_inner .section .imgcon {
+  display: flex;
+  margin : 0 auto;
+  margin-top : -50px;
+}
+.main01_inner .section .imgcon img {
+  width : 250px;
+  margin: 150px;
+  margin-left: 10px;
+}
+.main01_inner .section h2{
+  margin-left: 330px;
+  font-size: 40px;
+  line-height : 0.8;
+}
+.main01_inner .section h2 .green {
+  color : green;
+}
+.main01_inner .section .rounded-button {
+  margin: 50px;
+  margin-bottom: -80px;
 }
 
 
 
-.main01, .main02, .main03, .main04{
-    width: 1440px;
-    height: 1026px;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto; /* 페이지 중앙 정렬 */
+
+.main02{
+  margin-top : 200px;
+  margin-bottom : 200px;
 }
-
-
-
-.main01_inner, .main02_inner,.main03_inner, .main04_inner{
-    width: 1088px;
-    height: 600px;
-    background-color: #ddd; /* 내부 박스 배경색 */
-    display: flex; /* 내부 div를 가로로 배치 */
-}
-
-
-
-/*main02 디자인*/
 .main02_inner {
-    display: flex;
-    justify-content: center; /* 가로 축 중앙 정렬 */
-    align-items: center; /* 세로 축 중앙 정렬 */
-    height: 100vh; /* 전체 화면 높이 */
-    width: 100%; /* 전체 화면 너비 */
+  display: flex;
+  flex-direction: column; /* 요소들을 수직 방향으로 배치 */
+  justify-content: center; /* 수직 가운데 정렬 */
+  align-items: center; /* 수평 가운데 정렬 */
+  height: 100vh; /* 화면 전체 높이를 차지하도록 설정 */
 }
-
+.main02_inner .con {
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  text-align: center;
+}
+.main02_inner .con p {
+  color : #595959;
+}
+.main02_inner .con:first-child {
+  left: 0; /* 첫 번째 요소를 왼쪽에 배치 */
+  top: 50%; /* 첫 번째 요소를 중간에 배치 */
+  transform: translateY(10%); /* 수직 가운데 정렬 */
+}
+.main02_inner .con:last-child {
+  right: 0; /* 두 번째 요소를 오른쪽에 배치 */
+  top: 50%; /* 두 번째 요소를 중간에 배치 */
+  transform: translateY(50%); /* 수직 가운데 정렬 */
+}
 .main02_inner .section {
-    display: flex;
-    justify-content: center; /* 가로 축 중앙 정렬 */
-    /*align-items: center; /* 세로 축 중앙 정렬 */
-    width: 100%; /* 섹션 너비 전체 사용 */
-    height: 600px; /* 전체 화면 높이 */
+  text-align: center; /* 텍스트를 가운데 정렬 */
+  width: 100%;
+}
+.main02_inner  .imgcon {
+  display: flex; /* 요소들을 플렉스 박스로 설정 */
 }
 
-.main02_inner .section:nth-child(3) {
-    flex-direction: column; /* 세로 정렬을 위해 방향을 변경 */
+.main02_inner .section h2{
+  margin : 30px;
+  font-size: 40px;
+  margin-bottom: 50px; /* h2 요소 아래 여백 추가 */
 }
-
-.main02_inner .section:nth-child(3) h2,
-.main02_inner .section:nth-child(3) p,
-.main02_inner .section:nth-child(3) .rounded-button {
-    margin: 30px 0; /* 상하 여백 추가 */
-}
-
-.main02_inner .section:nth-child(3) h2{
-    font-size: 36px;
-    line-height: 1.5;
-}
-.main02_inner .section:nth-child(3) p{
-    font-size: 17px;
-    line-height: 2;
-
+.main02_inner .section .rounded-button {
+  margin: 50px;
+  margin-bottom: -80px;
 }
 
 
-.card-container {
-    display: flex;
-    justify-content: center; /* 가로 축 중앙 정렬 */
-    align-items: center; /* 세로 축 중앙 정렬 */
-    height: 600px;
-    margin:  0 auto; /* 상하 마진 없이, 좌우 자동 마진, 밑에 위치 버튼 넣으려고 위로 보냄*/
+.main03 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  top : 30px;
+  position: relative; /* 또는 absolute */
+}
+.main03_inner {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.main03_inner .section {
+  position : absolute;
+  width: 100%;
+  text-align: center;
+}
+.main03_inner .section .con {
+  display: flex;
+  margin : 0 auto;
+  text-align: center;
+  position: relative;
+  justify-content: center;
+}
+.main03_inner .section .con p {
+  color :#595959;
+}
+.main03_inner .section .con .item {
+  margin : 70px;
+  margin-right: 100px;
+}
+.con .item:nth-child(3){
+  margin-top: 60px !important;
+}
+.item:nth-child(3) img {
+  margin : 15px;
+  width : 120px;
+  
+}
+.item:nth-child(3) p {
+  margin-top: -20px;
+  
+}
+.main03_inner .section .con .item p{
+  position : absolute;
+  font-size: 15px;
+  margin-left : -5px;
 }
 
-.card-container img {
-    transition: transform 0.3s ease-in-out; /* 확대 효과를 부드럽게 */
-    margin: 0 -10px; /* 이미지 간 간격 조정 */
+.main03_inner .section .imgcon {
+  display: flex;
+  margin : 0 auto;
+  margin-top : -50px;
+}
+.main03_inner .section .imgcon img {
+  width : 100px;
+  margin: 150px;
+  margin-left: 10px;
 }
 
-.large-image {
-    width: 200px; /* 큰 이미지의 기본 크기 */
+.main03  .button_image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* 버튼 간격을 조절하고 싶으면 이 값을 조정하세요 */
+  
+}
+.main03_inner .section h2{
+  font-size: 40px;
+  line-height : 1.8;
+  color : #3F3F3F;
+}
+.main03 .section h2 span {
+  color: #FADD00; /* 노란색 적용 */
+}
+.main03_inner .section .rounded-button {
+  margin: 50px;
+  margin-bottom: -80px;
 }
 
-.small-image {
-    width: 150px; /* 작은 이미지의 기본 크기 */
+.main05 {
+  margin : 200px;
+  margin-bottom : 200px;
+}
+.main05_inner {
+  width: 100%;
+  display: flex;
+  justify-content: center; /* 수직 가운데 정렬 */
+  align-items: center; /* 수평 가운데 정렬 */
+}
+.main05_inner .section h1 {
+  margin-left: 40px;
+  font-size: 35px;
+  
 }
 
-.card-container img:hover {
-    transform: scale(1.3); /* 이미지를 10% 확대 */
+.main05_inner  .con{
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  
+}
+.main05_inner .qcon {
+  width : 490px;
+  height: 314px;
+  margin : 30px;
+  padding : 30px;
+  border-radius: 20px;
+  border: 1px solid #C6C6C6;
+}
+.main05_inner .qcon span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.main05_inner .qcon:first-child h3 {
+  margin-top : 30px;
+  color : #3F3F3F;
+}
+.main05_inner .qcon:first-child p {
+  margin-top : 40px;
+  color : #3F3F3F;
 }
 
-
-/*main03 디자인*/
-
-.main03_inner h2{
-    color:#fff;
-}
-
-.main03_inner p{
-    color:#fff;
-}
-
-
-.notice02 {
-    width: 970px;
-    height:50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px; /* 패딩 설정 */
-    background-color: #fff; /* 컨테이너 배경색 */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
-    margin: 0 auto;
-    border-radius: 10px;
-    
-}
-
-.main03_inner .notice02 .item a {
-    text-decoration: none; 
-}
-.item {
-    flex-grow: 1; /* 모든 항목이 동등하게 공간 차지 */
-    text-align: center; /* 텍스트 중앙 정렬 */
-    padding: 10px; /* 항목 내부 패딩 */
-    font-size: 17px; /* 글자 크기 */
-    color: #333; /* 글자 색상 */
-    
-}
-
-
-/*main04 수정*/
-.main04{
-    flex-direction: column;
-}
-
-.main04_inner{ /*타이틀 써야돼서 좀 내림*/
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-
-
-.section {
-    width: 100%; /* 각 섹션의 너비 */
-   
-}
-
-
-
-/*main04 디자인*/
-
-.main04>h2{
-    line-height: 1.5;
-    font-size: 36px;
-    text-align: center;
-}
-
-.container-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    width: 80%; /* 박스들을 담는 컨테이너의 폭 조정 */
-    gap:25px;
-
-    margin: 0 auto; /* 수평 중앙 정렬을 위한 자동 마진 설정 */
-    position: relative; /* 위치 상대 설정 */
-    
-    width: calc(363px * 3 + 20px); /* 세 컨테이너의 총 너비 계산 (10px 간격 포함) */
-    height: auto; /* 높이는 자식 요소에 맞춰 자동으로 설정 */
-
-
-}
-
-.container {
-    width: 346px; /* 상자의 너비 조정 */
-    height: 225px; /* 상자의 높이 조정 */
-   /* background-color: #444859; /* 배경색 설정 */
-    border-radius: 20px; /* 둥근 모서리 설정 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.container-wrapper02 {
-    display: flex;
-    justify-content: flex-start;
-    width: 80%; /* 박스들을 담는 컨테이너의 폭 조정 */
-    gap:25px;
-
-    margin: 0 auto; /* 수평 중앙 정렬을 위한 자동 마진 설정 */
-    position: relative; /* 위치 상대 설정 */
-    
-    width: calc(363px * 3 + 20px); /* 세 컨테이너의 총 너비 계산 (10px 간격 포함) */
-    height: auto; /* 높이는 자식 요소에 맞춰 자동으로 설정 */
-
-
-}
-
-.container02 {
-    width: 346px; /* 상자의 너비 조정 */
-    height: 100%; /* 상자의 높이 조정 */
-    /*background-color: #e6b0aa; /* 배경색 설정 */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top:30px;
-    flex-direction: column;
-
-}
-
-.container02>h3{
-    font-size: 22px;
-}
-
-.container02>p{
-    text-align: center;
-    line-height: 2;
-    font-size: 17px;
-}
-
-#phone-bg{
-    background-color: #444859;
-}
-
-#lock-bg{
-    background-color: #C8C8C8;
-}
-
-#kakaologo-bg{
-    background-color: #F7E600;
-}
-
-.container img {
-    width: 89px; /* 이미지의 크기 조정 */
-    height: 89px;
-}
-
-#kakaologo{
-    width: 60px; /* 이미지의 크기 조정 */
-    height: 70px;
-}
-
-
-
-/*첫 번째 섹션 디자인*/
-
-.section:first-child {
-    width: 460px; /* 첫 번째 영역 너비 */
-    background-color: #a0cce6; /* 배경색 */
-}
-
-/*세 번째는 예외*/
-.main03 .section:first-child {
-    width: 100%; /* 첫 번째 영역 너비 */
-    background-color: #333B58; /* 배경색 */
-}
-
-.section:first-child>h2{
-    line-height: 1.5;
-    font-size: 36px;
-    margin: 70px 50px 70px 50px;
-    
-}
-
-.section:first-child>p{
-    line-height: 2;
-    font-size: 17px;
-    margin: 0 50px 70px 50px;
-}
-
-#roundButton01{
-    margin: 0 50px 0 50px;
-}
-
-
-/*첫 번째 섹션 이미지(모임통장...)*/
-
-.main01_inner .section img {
-    width: 100%; /* 섹션 너비에 맞게 이미지 크기 조절 */
-    height: 100%; /* 섹션 높이에 맞게 이미지 크기 조절 */
-    object-fit: cover; /* 이미지 비율을 유지하면서 섹션을 꽉 채움 */
-}
-
-
-
-/*두 번째 섹션 디자인*/
-
-.section:nth-child(2) {
-    width: 173px; /* 두 번째 영역 너비 */
-    background-color: #e6b0aa; /* 배경색 */
-}
-
-
-
-/*세 번째 섹션 디자인*/
-
-.section:last-child {
-    width: 460px; /* 세 번째 영역 너비 */
-    background-color: #c1e1a0; /* 배경색 */
-}
-
-
-/*FOOTER*/
+  /*FOOTER*/
 
 footer {
-    
+    width : 100%;
     background-color: #D9D9D9;
     background-size: 1440px;
-    
+
   }
   footer .inner {
     padding : 40px 0 60px 0;
@@ -978,13 +896,5 @@ footer {
     float: right;
     margin-top : -50px;
   }
-
-
-
-
-
-
-
-
 
 

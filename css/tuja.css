@@ -1,0 +1,451 @@
+body {
+    color : #333;
+    font-size : 16px;
+    font-weight : 400;
+    line-height : 1.4;
+    font-family: 'NotoSansKR-Regular', sans-serif;
+    background-color: #ffff;
+    background-size: 1440px;
+}
+
+
+
+h1 {
+    font-weight: bold;
+    color : #3F3F3F;
+  }
+h3 {
+  color : #595959;
+}
+p {
+    line-height : 1.8;
+    font-size : 18px;
+    color : #3F3F3F;
+}
+  img {
+      display: block;
+      
+  }
+  
+  a {
+      text-decoration: none;
+      color : #3f3f3f;
+  }
+
+  .rounded-button {
+    width: 150px;
+    height: 52px;
+    border-radius: 50px;
+    background-color: #444859;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    display: flex; /* flexbox를 사용하여 내부 요소들을 정렬 */
+    align-items: center; /* 세로 중앙 정렬 */
+    text-align: center; /* 텍스트 중앙 정렬 */
+}
+.button-text {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+#roundButton01{
+    width:150px;
+}
+#roundButton02{
+    width:150px;
+    height: 50px;
+    background-color: #ffffff;
+}
+
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+    position: relative; /* 포지셔닝을 위해 relative 설정 */
+    display: flex; /* 센터 정렬을 위한 flex 설정 */
+    justify-content: center; /* 가로 중앙 */
+    align-items: center; /* 세로 중앙 */
+}
+
+  .inner{
+      width : 1100px;
+      margin : 0 auto; /*가운데정렬*/
+      position : relative;
+  }
+  .btn {
+      width : 130px;
+      padding : 10px;
+      background-color: #ffff;
+      border-radius: 20px;
+      color : #ffff;
+      font-size : 16px;
+      font-weight: 700;
+      text-align : center;
+      cursor : pointer;
+      box-sizing : border-box;
+      display : block;
+      
+  }
+  .btn1 {
+    width : 130px;
+    padding : 10px;
+    background-color: #444859;
+    border-radius: 20px;
+    color : #ffff;
+    font-size : 16px;
+    font-weight: 700;
+    text-align : center;
+    cursor : pointer;
+    box-sizing : border-box;
+    display : block;
+    
+}
+
+
+  
+  
+  /*HEADER*/
+  header {
+      width : 100%;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      background-color : #ffffff;
+      /*position: relative;*/
+      position : fixed; /*브라우저의 뷰포트 기준 배치*/
+      z-index : 9; /*덮이지 않도록 숫자를 높게 설정해서*/
+      top : 0;
+  }
+  header > .inner {
+      width : 1100px;
+      height : 120px;
+      background-color : #ffffff;
+      margin : 0 auto;
+      position: relative;
+      display: flex; /* 내부 요소를 플렉스 박스로 설정 */
+      justify-content: center; /* 수평으로 가운데 정렬 */
+      align-items: center;
+      
+  }
+  header .logo {
+      height : auto; 
+      position: absolute;
+      top : 60px;
+      bottom : 0;
+      left : 0;
+      margin : auto;
+      
+  }
+  header .sub-menu {
+      position : absolute;
+      top : 10px;
+      right : 0;
+      display : flex;
+      margin : auto;
+      
+  }
+  header .sub-menu .btn {
+    color : #444859;
+    
+}
+  header .sub-menu ul.menu {
+      font-family : Arial, sans-serif;
+      display : flex;
+      
+  }
+  header .sub-menu ul.menu li {
+      position: relative;
+      bottom : -40px;
+      margin-left : 120px;
+      list-style: none;
+  }
+  
+  header .sub-menu ul.menu li::before {
+      
+      display: block;
+      width : 1px;
+      height : 12px;
+      background-color: #e5e5e5;
+      position: absolute;
+      top : 0;
+      bottom : 0;
+      margin : auto;
+  }
+  header .sub-menu ul.menu li:first-child::before{
+      display : none;
+  }
+  header .sub-menu ul.menu li a {
+      font-size : 15px;
+      padding : 11px 16px;
+      display: block;
+      color : #3f3f3f;
+  }
+  
+  header .sub-menu .search {
+    height : 34px;
+    position : relative;
+    color : #444859;
+  }
+
+
+
+  header .sub-menu ul.menu .search {
+    height : 34px;
+    position : relative;
+  }
+  header .sub-menu ul.menu .search input {
+    width : 36px;
+    height : 34px;
+    padding : 4px 10px;
+    border : 1px solid #ccc;
+    box-sizing : border-box;
+    border-radius: 5px;
+    outline : none;
+    background-color : #fff;
+    color : #777;
+    font-size : 12px;
+    transition : width .4s;
+  }
+  
+  header .main-menu{
+      position: absolute;
+      bottom : 0;
+      right : 0;
+      z-index : 1;
+      display : flex;
+      
+  }
+  header .main-menu .item{
+    
+  }
+  header .main-menu .item .item__name {
+      padding : 10px 20px 34px 20px;
+      font-family : Arial, sans-serif;
+      font-size : 13px;
+  }
+  header .main-menu .item .item__name a {
+    text-decoration: none;
+  }
+  header .main-menu .item:hover .item__name{ 
+      color : #000;
+      font-weight: 100px;
+      text-decoration: none;
+  } 
+  header .main-menu .item .item__contents {
+      width : 100%;
+      position: fixed;
+      left : 0;
+      display : none;
+  }
+  header .main-menu .item:hover .item__contents{
+      display : block;
+  }
+  
+  header .main-menu .item .item__contents .contents__menu > ul{
+      display : flex;
+      padding : 20px 0;
+  
+  }
+  header .main-menu .item .item__contents .contents__menu > ul
+  
+  
+  
+  header .main-menu .item .item__contents .contents__menu .search .material-icons{
+      position: relative;
+  }
+  
+  header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover{
+      color : #669900;
+  }
+  
+  header .main-menu .item .item__contents .contents__texture h4{
+      color : #999;
+      font-weight : 700;
+  }
+  header .main-menu .item .item__contents .contents__texture p{
+      color : #669900;
+      margin : 4px 0 14px;
+  }
+  header .badges{
+      position : absolute; /*부모요소는 header가 된다*/
+      top : 132px;
+      right : 12px;
+  }
+  header .badges .badge{
+      border-radius: 10px;
+      overflow : hidden;
+      margin-bottom : 12px;
+      box-shadow: 4px 4px 10px rgba(0,0,0,.15);
+      cursor : pointer;
+  }
+
+
+/*VISUAL*/
+.visual {
+    margin-top: 120px;
+    width : 100%;
+    height: 600px;
+    background-position: center;
+    display: flex;
+  }
+  .visual .inner {
+    position: relative;
+    width : 100%;
+    font-size : 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 가로 방향으로 가운데 정렬 */
+  }
+  
+  
+  .visual .fade-in_ {
+    position: absolute;
+    display: flex;
+    gap : 100px;
+  }
+  .visual .fade-in_ img {
+    
+}
+  .visual .fade-in_ h1 {
+    margin-top : 120px;
+    font-size: 45px;
+  }
+  .visual .fade-in_ >* {
+    
+  }
+  .visual .fade-in .btndiv {
+    display: flex;
+    gap : 10px;
+    
+  }
+  
+
+  /*VISUAL2*/
+.visual2 {
+    background-color: #FF855F;
+    width : 100%;
+    height: 400px;
+    background-position: center;
+    display: flex;
+  }
+  .visual2 .inner {
+    position: relative;
+    width : 100%;
+    font-size : 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* 가로 방향으로 가운데 정렬 */
+  }
+  
+  
+  .visual2 .fade-in{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* 가로 방향으로 가운데 정렬 */
+  }
+  .visual2 .fade-in img {
+    
+}
+  .visual2 .fade-in h1 {
+    color : #ffff;
+    font-size: 45px;
+  }
+  .visual2 .fade-in p {
+    color : #ffff;
+  }
+  .visual2 .fade-in .btndiv {
+    display: flex;
+    gap : 10px;
+  }
+  .visual2 .fade-in .btndiv .button-text {
+    color : #3F3F3F;
+    font-size : 17px;
+  }
+  
+
+/*VISUAL2*/
+.visual3 {
+    background-color: #F6F6F7;
+    width : 100%;
+    height: 400px;
+    background-position: center;
+    display: flex;
+  }
+  .visual3 .inner {
+    position: relative;
+    width : 100%;
+    font-size : 15px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  
+.visual3 .fade-in {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+    padding: 30px; /* 요소 내부에 여백 추가 */
+}
+.visual3 .fade-in_ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   
+    padding: 30px; /* 요소 내부에 여백 추가 */
+}
+.visual3 .fade-in .fade-in-class {
+    display: flex;
+    justify-content: center; /* 수평 중앙 정렬 */
+    align-items: flex-start; /* 요소들이 위쪽에서부터 정렬되도록 설정 */
+    gap : 100px;
+}
+.visual3 .fade-in-class .divin {
+    margin : 30px;
+}
+.visual3 .fade-in-class .divin:first-child {
+    margin-top: -30px;
+}
+.visual3 .fade-in-class .divin:first-child p {
+    margin-top : -20px;
+}
+.visual3 .fade-in_ .fade-in-class .divin img {
+    margin-top: 55px;
+}
+.visual3 .fade-in_ .fade-in-class .divin p {
+    margin : 5px;
+}
+  .visual3 .fade-in h3 {
+    color : #595959;
+    font-size: 30px;
+  }
+  .visual3 .fade-in,.fade-in_ p {
+    color : #595959;
+    font-weight: bold;
+  }
+  .visual3 .fade-in .btndiv {
+    display: flex;
+    gap : 10px;
+  }
+  .visual3 .fade-in .btndiv .button-text {
+    color : #3F3F3F;
+    font-size : 17px;
+  }
+
+
+ .visual3 .fade-in_ h3 {
+    color : #595959;
+    font-size: 30px;
+  }
+  .visual3 .fade-in_ p {
+    color : #595959;
+  }
+  
+
+  
