@@ -1,0 +1,1101 @@
+body {
+  background-size: auto;
+  color : #333;
+  font-size : 16px;
+  font-weight : 400;
+  line-height : 1.4;
+  font-family: 'NotoSansKR-Regular', sans-serif;
+  background-color: #ffff;
+  font-family: 'Noto Sans KR', sans-serif;
+
+}
+
+h1 {
+  font-weight: bold;
+}
+p {
+  line-height : 1.8;
+  font-size : 18px;
+}
+img {
+    display: block;
+    
+}
+
+a {
+    text-decoration: none;
+    color : #3f3f3f;
+}
+.inner{
+    width : 1100px;
+    margin : 0 auto; /*가운데정렬*/
+    position : relative;
+}
+.btn {
+    width : 130px;
+    padding : 10px;
+    background-color: #444859;
+    border-radius: 20px;
+    color : #ffff;
+    font-size : 16px;
+    font-weight: 700;
+    text-align : center;
+    cursor : pointer;
+    box-sizing : border-box;
+    display : block;
+    
+}
+
+ /*HEADER*/
+ header {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width : 100%;
+  background-color : #fff;
+  /*position: relative;*/
+  position : fixed; /*브라우저의 뷰포트 기준 배치*/
+  z-index : 9; /*덮이지 않도록 숫자를 높게 설정해서*/
+  top : 0;
+}
+header > .inner {
+  width : 1100px;
+  height : 120px;
+  margin : 0 auto;
+  position: relative;
+  display: flex; /* 내부 요소를 플렉스 박스로 설정 */
+  justify-content: center; /* 수평으로 가운데 정렬 */
+  align-items: center;
+  
+}
+header .logo {
+  height : auto; 
+  position: absolute;
+  top : 60px;
+  bottom : 0;
+  left : 0;
+  margin : auto;
+  
+}
+header .sub-menu {
+  position : absolute;
+  top : 10px;
+  right : 0;
+  display : flex;
+  margin : auto;
+  
+}
+header .sub-menu ul.menu {
+  font-family : Arial, sans-serif;
+  display : flex;
+  
+}
+header .sub-menu ul.menu li {
+  position: relative;
+  bottom : -40px;
+  margin-left : 120px;
+  list-style: none;
+}
+
+header .sub-menu ul.menu li::before {
+  
+  display: block;
+  width : 1px;
+  height : 12px;
+  background-color: #e5e5e5;
+  position: absolute;
+  top : 0;
+  bottom : 0;
+  margin : auto;
+}
+header .sub-menu ul.menu li:first-child::before{
+  display : none;
+}
+header .sub-menu ul.menu li a {
+  font-size : 15px;
+  padding : 11px 16px;
+  display: block;
+  color : #444859;
+}
+
+header .sub-menu ul.menu li c {
+font-size : 15px;
+padding : 11px 16px;
+display: block;
+color : #fff;
+}
+
+header .sub-menu .search {
+height : 34px;
+position : relative;
+}
+header .sub-menu ul.menu .search {
+height : 34px;
+position : relative;
+}
+header .sub-menu ul.menu .search input {
+width : 36px;
+height : 34px;
+padding : 4px 10px;
+border : 1px solid #ccc;
+box-sizing : border-box;
+border-radius: 5px;
+outline : none;
+background-color : #fff;
+color : #777;
+font-size : 12px;
+transition : width .4s;
+}
+
+header .main-menu{
+  position: absolute;
+  bottom : 0;
+  right : 0;
+  z-index : 1;
+  display : flex;
+  
+}
+header .main-menu .item{
+
+}
+header .main-menu .item .item__name {
+  padding : 10px 20px 34px 20px;
+  font-family : Arial, sans-serif;
+  font-size : 13px;
+}
+header .main-menu .item .item__name a {
+text-decoration: none;
+}
+header .main-menu .item:hover .item__name{ 
+  color : #000;
+  font-weight: 100px;
+  text-decoration: none;
+} 
+header .main-menu .item .item__contents {
+  width : 100%;
+  position: fixed;
+  left : 0;
+  display : none;
+}
+header .main-menu .item:hover .item__contents{
+  display : block;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul{
+  display : flex;
+  padding : 20px 0;
+
+}
+header .main-menu .item .item__contents .contents__menu > ul
+
+
+
+header .main-menu .item .item__contents .contents__menu .search .material-icons{
+  position: relative;
+}
+
+header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover{
+  color : #669900;
+}
+
+header .main-menu .item .item__contents .contents__texture h4{
+  color : #999;
+  font-weight : 700;
+}
+header .main-menu .item .item__contents .contents__texture p{
+  color : #669900;
+  margin : 4px 0 14px;
+}
+header .badges{
+  position : absolute; /*부모요소는 header가 된다*/
+  top : 132px;
+  right : 12px;
+}
+header .badges .badge{
+  border-radius: 10px;
+  overflow : hidden;
+  margin-bottom : 12px;
+  box-shadow: 4px 4px 10px rgba(0,0,0,.15);
+  cursor : pointer;
+}
+
+.promotion  .main01_inner, .main02_inner{
+width: 1088px;
+height: 600px;
+ /* 내부 박스 배경색 */
+display: flex; /* 내부 div를 가로로 배치 */
+}
+.promotion .main01 .section {
+width: 100%; /* 각 섹션의 너비 */
+display: relative;
+
+
+}
+.promotion .main01 .section a {
+margin-left: 150px;
+color : #393939;
+}
+.promotion  .section:first-child {
+width: 460px; /* 첫 번째 영역 너비 */
+ /* 배경색 */
+}
+
+.promotion  .main01_inner .section img {
+width: 100%; /* 섹션 너비에 맞게 이미지 크기 조절 */
+height: 100%; /* 섹션 높이에 맞게 이미지 크기 조절 */
+object-fit: cover; /* 이미지 비율을 유지하면서 섹션을 꽉 채움 */
+}
+
+
+
+.promotion  .section:first-child>h2{
+line-height: 1.5;
+font-size: 36px;
+margin: 70px 50px 70px 50px;
+
+}
+
+.promotion  .section:first-child>p{
+line-height: 2;
+font-size: 17px;
+margin: 0 50px 70px 50px;
+}
+
+#roundButton01{
+margin: 0 50px 0 50px;
+}
+
+
+
+.promotion  .section:nth-child(2) {
+width: 173px; /* 두 번째 영역 너비 */
+ /* 배경색 */
+}
+.promotion  .section:last-child {
+width: 460px; /* 세 번째 영역 너비 */
+ /* 배경색 */
+}
+
+/*VISUAL*/
+.visual {
+margin-top: 120px;
+background-color: #fff;
+width : 100%;
+background-position: center;
+}
+.visual .inner {
+height: 700px;
+/* font-size : 15px; */
+width: 100%;
+background-color: #ffffff;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 0 auto; 
+position : relative;
+}
+
+
+.visual .inner .box1 p {
+font-size : 18px;
+}
+
+.visual .inner .title h1 {
+font-size : 32px;
+}
+
+.visual .title {
+position: absolute;
+top: 50px;
+text-align: center;
+
+}
+
+
+.visual .title .btn {
+position: absolute;
+top: 259px;
+left: 173px;
+}
+
+
+/* .question .dotbogi.image {
+position: absolute;
+margin-left: 910px;
+margin-bottom: 10px;
+bottom : 20px;
+} */
+
+
+
+
+
+
+
+
+
+.box1 {
+  margin-right: 100px;
+  margin-top: 150px;
+  background-color: #fff;
+
+
+}
+
+.box1 p {
+  margin-top: -10px; /* 원하는 간격(px)을 지정합니다. */
+}
+
+.box1 h3 {
+  margin-bottom: 40px; /* 원하는 간격(px)을 지정합니다. */
+  margin-top: 40px;
+}
+
+
+.box1_ {
+  display: flex;
+  /* align-items: center;  */
+  margin-bottom: -30px;
+}
+
+.box1_ .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 38px;
+  /* display: flex; */
+  padding-left: 200px;
+}
+
+.box2_ {
+  display: flex;
+  /* align-items: center;  */
+  margin-bottom: -30px;
+}
+
+.box2_ .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 38px;
+  /* display: flex; */
+  padding-left: 300px;
+}
+
+.box3_ {
+  display: flex;
+  /* align-items: center;  */
+  margin-bottom: -30px;
+}
+
+.box3_ .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 38px;
+  /* display: flex; */
+  padding-left: 280px;
+}
+
+
+.box4_ {
+  display: flex;
+  /* align-items: center;  */
+  margin-bottom: -30px;
+}
+
+.box4_ .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 38px;
+  /* display: flex; */
+  padding-left: 318px;
+}
+
+.box5_ {
+  display: flex;
+  /* align-items: center;  */
+}
+
+.box5_ .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 38px;
+  /* display: flex; */
+  padding-left: 273px;
+}
+
+
+
+
+
+
+.box2 {
+  margin-left: 100px;
+  margin-top: 100px;
+  background-color: #FFF;
+}
+
+.box2 p {
+  margin-top: -10px; /* 원하는 간격(px)을 지정합니다. */
+}
+
+.box2 h3 {
+  margin-bottom: 40px; /* 원하는 간격(px)을 지정합니다. */
+  margin-top: 40px;
+}
+
+
+
+.box2_1 {
+  display: flex;
+  /* align-items: center;  */
+  margin-bottom: -30px;
+}
+
+.box2_1 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 38px;
+  /* display: flex; */
+  padding-left: 295px;
+}
+
+
+
+.box2_2 {
+  display: flex;
+  /* align-items: center;  */
+  margin-bottom: -30px;
+}
+
+.box2_2 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 38px;
+  /* display: flex; */
+  padding-left: 320px;
+}
+
+.box2_3 {
+  display: flex;
+  /* align-items: center;  */
+  margin-bottom: -30px;
+}
+
+.box2_3 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 38px;
+  /* display: flex; */
+  padding-left: 214px;
+}
+
+/* 버튼 */
+.rounded-button1 {
+  width: 258px;
+  height: 78px;
+  border-radius: 50px;
+  background-color: #F7E600;
+  color: #3f3f3f;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex; /* flexbox를 사용하여 내부 요소들을 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  padding: 0 10px; /* 좌우 패딩 */
+}
+
+.rounded-button2 {
+  width: 258px;
+  height: 78px;
+  border-radius: 50px;
+  background-color: #28B24F;
+  color: #3f3f3f;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex; /* flexbox를 사용하여 내부 요소들을 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  padding: 0 10px; /* 좌우 패딩 */
+}
+
+.rounded-button3 {
+  width: 258px;
+  height: 78px;
+  border-radius: 50px;
+  background-color: #444859;
+  color: white;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex; /* flexbox를 사용하여 내부 요소들을 정렬 */
+  align-items: center; /* 세로 중앙 정렬 */
+  padding: 0 10px; /* 좌우 패딩 */
+}
+
+#roundButton02{
+  width:340px;
+}
+
+.icon-circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: white;
+  margin-right: 10px;
+  position: relative; /* 포지셔닝을 위해 relative 설정 */
+  display: flex; /* 센터 정렬을 위한 flex 설정 */
+  justify-content: center; /* 가로 중앙 */
+  align-items: center; /* 세로 중앙 */
+}
+
+
+
+
+
+
+.buttonpack {
+  display: flex; /* 센터 정렬을 위한 flex 설정 */
+  justify-content: center; /* 가로 중앙 */
+  margin: 50px;
+}
+
+
+.button-text {
+  flex-grow: 1;
+}
+
+
+
+
+
+
+
+/* 질문 검색 섹션 */
+
+.question {
+  width: 100%; /* 요소의 너비를 화면 너비에 맞게 설정합니다. */
+  max-width: 600px; /* 요소의 최대 너비를 설정합니다. */
+  margin: 0 auto; /* 요소를 수평 가운데로 정렬합니다. */
+  padding: 100px; /* 내부 여백을 추가합니다. */
+  height: 600px;
+  
+}
+
+.question h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  color: 3F3F3F;
+  margin-bottom: 100px;
+}
+
+.q_box {
+  background-color: #fff;
+  width: 1000px;
+  height: 265px;
+  margin-top: 50px;
+  margin-left: -200px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 그림자를 적용합니다. */
+  border-radius: 10px; /* 요소의 모서리를 둥글게 만듭니다. */
+}
+
+.q_text1 {
+  display: flex;
+  /* align-items: center; 세로 정렬 방향 조정 */
+}
+
+.question .dotbogi.image {
+  width: 22px;
+  height: 22px;
+  margin-top: 15px;
+
+  
+}
+
+
+.q_text1 p {
+  color: #BFBFBF;
+  margin-left: 30px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+  margin-right: 710px;
+}
+
+.q_box .hr {
+  border-top: 1px solid #D9D9D9 /* 원하는 색상 및 두께를 지정합니다. */
+   /* 원하는 길이로 조절하세요 */
+   
+}
+
+.q_text2 p {
+  margin-bottom: -10px;
+  margin-left: 30px;
+}
+
+
+
+/* 공지사항 섹션 */
+
+.notion {
+  height: 1500px;
+  margin-top: -100px;
+}
+
+.notion h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 32px;
+  color: 3F3F3F;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.n_box1 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box1 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-right: 620px;
+
+}
+
+.n_box1 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box1 {
+  display: flex;
+  /* align-items: center; 세로 정렬 방향 조정 */
+}
+
+.n_box1 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: 30px;
+}
+
+
+/*  */
+
+.n_box2 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box2 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box2 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box2 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+/*  */
+
+.n_box3 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box3 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box3 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box3 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+/*  */
+
+.n_box4 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box4 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box4 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box4 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+/*  */
+
+.n_box5 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box5 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box5 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box5 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+/*  */
+
+.n_box6 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box6 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box6 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box6 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+/*  */
+
+.n_box7 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box7 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box7 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box7 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+/*  */
+
+.n_box8 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box8 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box8 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box8 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+/*  */
+
+.n_box9 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box9 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box9 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box9 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+/*  */
+
+.n_box10 {
+  background-color: #fff;
+  width: 1000px;
+  height: 95px;
+  margin: 0 auto; 
+  border: 1px solid #D9D9D9;
+
+}
+
+.n_box10 p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+
+}
+
+.n_box10 p span {
+  color: #777777;
+  font-size: 16px;
+
+}
+
+.n_box10 .g81.image {
+  width: 29px;
+  height: 32px;
+  margin-top: -70px;
+  margin-left: 940px;
+}
+
+
+
+.page {
+  background-color: #fff;
+  width: 200px;
+  height: 80px;
+  margin: 0 auto; 
+  display: flex;
+ 
+
+}
+
+.page p {
+  color: #3f3f3f;
+  font-size: 18px;
+  margin-left: 30px;
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+
+}
+
+.page p span {
+  color: #777777;
+  font-size: 18px;
+
+}
+
+.page .g91.image {
+  width: 16px;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.page .g92.image {
+  width: 16px;
+  height: 15px;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+
+
+
+
+/*FOOTER*/
+
+footer {
+    
+    background-color: #D9D9D9;
+    background-size: 1440px;
+    
+  }
+  footer .inner {
+    padding : 40px 0 60px 0;
+  }
+  footer .menu {
+    display: flex;
+    justify-content: center;
+  }
+  footer .menu li {
+    position : relative;
+    list-style: none;
+  }
+  footer .menu li::before {
+    
+    width : 3px;
+    height: 3px;
+    background-color: #555;
+    position : absolute;
+    top : 0;
+    bottom :0;
+    right : -1px;
+    margin : auto;
+  }
+  footer .menu li:last-child::before {
+    display: none;
+  }
+  footer .menu li a {
+    color : #767676;
+    font-size : 12px;
+    font-weight: 700;
+    padding : 15px;
+    display: block;
+  }
+  
+  footer .btn-group {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+  footer .btn-group .btn {
+    font-size : 12px;
+    margin-right : 10px;
+  }
+  footer .btn-group .btn:last-child {
+    margin-right : 0;
+  }
+  footer .info {
+    
+    text-align: center;
+  }
+  footer .info span {
+    margin-right: 20px;
+    color : #767676;
+    font-size : 12px;
+  }
+  footer .info span:last-child {
+    margin-right : 0;
+  }
+  footer .copyright {
+    color : #767676;
+    font-size: 12px;
+    text-align: center;
+    margin-top : 12px;
+  }
+  footer .logo {
+    float: right;
+    margin-top : -50px;
+  }

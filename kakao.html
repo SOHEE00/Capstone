@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-<meta charset="UTF-8">
-<title>Starbucks Coffee Korea</title>
-<link rel="stylesheet" href="./css/styles.css">
-<link rel = "icon" href="./favicon.png">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Coffee Korea</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel = "icon" href="./favicon.png">
 </head>
 <body>
     <header>
@@ -15,13 +17,13 @@
             <div class="sub-menu">
                 <ul class="menu">
                     <li>
-                        <a href="./signin">내 계좌</a>
+                        <a href="./bank02.html">내 계좌</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">상품/서비스</a>
+                        <a href="./service.html">상품/서비스</a>
                     </li>
                     <li>
-                        <a href="javascript:void(0)">고객센터</a>
+                        <a href="./customer.html">고객센터</a>
                     </li>
                     <li>
                       <div class="search">
@@ -30,9 +32,7 @@
                     </li>
                 </ul>  
             </div>
-        </div>
-    
-        
+        </div>    
        </header>
     
        <!--VISUAL-->
@@ -69,12 +69,12 @@
             <div class="inner_left">
               
               <div class="con">
-                <div class="item"><a href="javascript:void(0)">입출금통장</a></div>
-                <div class="item"><a href="javascript:void(0)">모임통장</a></div>
-                <div class="item"><a href="javascript:void(0)">26주적금</a></div>
+                <div class="item"><a href="./bank02.html">입출금통장</a></div>
+                <div class="item"><a href="./GB.html">모임통장</a></div>
+                <div class="item"><a href="./26week.html">26주적금</a></div>
                 <div class="item"><a href="javascript:void(0)">예금/적금</a></div>
                 <div class="item"><a href="daechul.html">대출</a></div>
-                <div class="item"><a href="javascript:void(0)">투자</a></div>
+                <div class="item"><a href="./tuja.html">투자</a></div>
             </div>
               
               
@@ -96,9 +96,11 @@
                 재미있는 메시지 카드로 회비<br>입금 요청도 해보세요.
             </p>
             <button class="rounded-button" id="roundButton01">
-                <span class="icon-circle"></span>
-                <span class="button-text">모임통장</span>
-              </button>
+                <span class="icon-circle">
+                    <img src="./images/rightarr.png" alt="icon" class="icon-image">
+                </span>
+                <span class="button-text" ><a href="./GB.html">모임통장</a></span>
+            </button>
         </div>
 
         <div class="section"></div>
@@ -108,7 +110,6 @@
         </div>
     </div>
 </div>
-
 
 
 <!--메인 두 번째 섹션-->
@@ -131,7 +132,9 @@
                 원하는 디자인과 기능을 선택할 수 있습니다.
             </p>
             <button class="rounded-button" id="roundButton02">
-                <span class="icon-circle"></span>
+                <span class="icon-circle">
+                    <img src="./images/rightarr.png" alt="icon" class="icon-image">
+                </span>
                 <span class="button-text">카카오뱅크 프렌즈 체크카드</span>
               </button>
         </div>
@@ -147,11 +150,12 @@
 <div class="main03">
     <div class="main03_inner">
         <div class="section">
-            <h2>복잡한 서류 제출을 간편하게,<br>내가 원하는 시간에</h2>
-            <p>이사 날짜가 주말이나 공휴일이어도<br>
-               전월세보증금 대출을 신청할 수 있습니다.
-            </p>
-
+            <div class="con">
+                <h2>복잡한 서류 제출을 간편하게,<br>내가 원하는 시간에</h2>
+                <p>이사 날짜가 주말이나 공휴일이어도<br>
+                전월세보증금 대출을 신청할 수 있습니다.
+                </p>
+            </div>
              <!--notice랑 같은 양식 추가-->
             <div class="notice02">
                 <div class="item"><a href='/'>마이너스 통장대출</a></div>
@@ -161,11 +165,6 @@
             </div>
 
         </div>
-
-       
-
-        
-
     </div>
 </div>
 

@@ -1,14 +1,12 @@
 body {
-    color : #333;
-    font-size : 16px;
-    font-weight : 400;
-    line-height : 1.4;
-    font-family: 'NotoSansKR-Regular', sans-serif;
-    background-color: #ffff;
-    background-size: 1440px;
+  background-size: auto;
+  color : #333;
+  font-size : 16px;
+  font-weight : 400;
+  line-height : 1.4;
+  font-family: 'NotoSansKR-Regular', sans-serif;
+  background-color: #ffff;
 }
-
-
 
 h1 {
     font-weight: bold;
@@ -293,12 +291,6 @@ h1 {
     margin-top : -100px;
   }
   
-  
-  
-
-
-
-
 
   .visual .inner .fade-in .plclass {
     justify-content: center;
@@ -331,29 +323,28 @@ h1 {
     top: 259px;
     left: 173px;
   }
-  .visual .cup1.image {
-    position: absolute;
-    bottom: 40px;
-    right: -47px;
-  }
+ 
   
-  .visual .cup1.text {
-    position: absolute;
-    top: 38px;
-    right: 171px;
-  }
   
-  .visual .cup2.image {
+  .fade-in1 .cup2.image {
     position: absolute;
     bottom: 0;
-    right: 162px;
+    right: 200px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .fade-in1{
+    justify-content: center;
     text-align: center;
   }
-  .visual .cup2.text {
-    position: absolute;
-    top: 321px;
-    right: 416px;
+  .fade-in1 img {
+    margin : 10px;
   }
+  .visual .cup2.image p {
+    text-align: center;
+  }
+
   .visual .spoon {
     position: absolute;
     bottom: 0;
@@ -362,7 +353,7 @@ h1 {
   .visual .fade-in {
     top : -80px;
   }
-
+/*notice line*/
   .notice .notice-line {
     position : relative;
   }
@@ -386,14 +377,9 @@ h1 {
     position : absolute;
     height : 138px;
     width : 100%;
-    
     display : flex;
     /* 자식요소 수평 display : flex; */
-    
-    
   }
-  
-  
   .notice .notice-line .inner_left .con {
     position : absolute;
     height : 160px;
@@ -465,14 +451,11 @@ h1 {
     font-size: 17px;
     font-weight: 700;
   }
-  
-  
   .notice .promotion {
     height: 693px;
     background-color: #f6f5ef;
     position: relative;
     overflow: hidden;
-   
   }
   .notice .promotion {
     /*width: auto;*/
@@ -480,9 +463,7 @@ h1 {
     background-color: #f6f5ef;
     position: relative;
     overflow: hidden;
-    
   }
-  
   .notice .promotion .swiper-container {
     /* 819px 슬라이드 3개와 그 사이 여백 10px씩 = 2477px */
     position: absolute;
@@ -511,53 +492,10 @@ h1 {
     right :0;
   }
 
-  .notice .promotion .swiper-pagination .swiper-pagination-bullet {
-    background-color: transparent;
-    background-image: url(../images/promotion_slide_pager.png);
-    width : 12px;
-    height : 12px;
-    margin-right : 6px;
-    outline : none;
-  }
-  .notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child {
-    margin-right : 0;
-  }
-  .notice .promotion .swiper-pagination .swiper-pagination-bullet:last-child-active {
-    background-image: url(../images/promotion_slide_pager_on.png);
-  }
-  .notice .promotion .swiper-prev,
-  .notice .promotion .swiper-next {
-    width : 42px;
-    height : 42px;
-    border : 2px solid #333;
-    border-radius: 50%;
-    position: absolute;
-    top : 300px;
-    z-index : 1;
-    cursor: pointer;
-    outline : none;
-    display : flex;
-    justify-content: center;
-    align-items: center;
-    transition : .4s;
-  }
-  .notice .promotion .swiper-prev {
-    left : 50%;
-    margin-left : -480px;
-  }
-  .notice .promotion .swiper-next {
-    left : 50%;
-    margin-right: -480px;
-  }
-
-  .notice .promotion .swiper-prev:hover,
-  .notice .promotion .swiper-next:hover {
-    background-color: #333;
-    color : #fff;
-  }
+  
   
 
-
+/*button*/
   .rounded-button {
     width: 258px;
     height: 78px;
@@ -588,28 +526,19 @@ h1 {
     justify-content: center; /* 가로 중앙 */
     align-items: center; /* 세로 중앙 */
 }
-
-
-
-
 .button-text {
     flex-grow: 1;
 }
 
-.rounded-button:hover {
-    /*background-color: 2A2D3A;*/
-}
 
-
+/*main section*/
 .main01 {
-  
   position: relative; /* 또는 absolute */
   top: 200px;
 }
 .main01, .main02, .main03, .main04{
   width: 1440px;
   height: 700px;
-  background-color: #f0f0f0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -618,7 +547,7 @@ h1 {
 .main01_inner, .main02_inner,.main03_inner, .main04_inner{
   width: 1088px;
   height: 500px;
-  background-color: #ddd; /* 내부 박스 배경색 */
+  
   display: flex; /* 내부 div를 가로로 배치 */
 }
 .main01_inner .section {
@@ -628,7 +557,6 @@ h1 {
 }
 .main01_inner .section .imgcon {
   display: flex;
-  
 }
 .main01_inner .section .imgcon img {
   width : 130px;
@@ -647,22 +575,17 @@ h1 {
 }
 
 
-
-
 .main02{
-  margin-top : 500px;
-  margin-bottom : 250px;
-  
+  margin-top : 300px;
+  margin-bottom : 200px;
 }
 
 .main02_inner .section {
   margin : 0 auto;
-  width: 100%;
-  
+  width: 100%; 
 }
 .main02_inner .section .imgcon {
-  display: flex;
-  
+  display: flex; 
 }
 .main02_inner .section .imgcon img {
   width : 130px;
@@ -680,19 +603,11 @@ h1 {
 }
 
 
-
-
-
-
-
-
-  /*FOOTER*/
+/*FOOTER*/
 
 footer {
-    
     background-color: #D9D9D9;
     background-size: 1440px;
-    
   }
   footer .inner {
     padding : 40px 0 60px 0;
@@ -706,7 +621,6 @@ footer {
     list-style: none;
   }
   footer .menu li::before {
-    
     width : 3px;
     height: 3px;
     background-color: #555;
@@ -740,7 +654,6 @@ footer {
     margin-right : 0;
   }
   footer .info {
-    
     text-align: center;
   }
   footer .info span {
