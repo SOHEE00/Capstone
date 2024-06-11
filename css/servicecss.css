@@ -383,14 +383,15 @@ h1 {
   .notice .notice-line .inner_left .con {
     position : absolute;
     height : 160px;
-      width : 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-       /* 패딩 설정 */
-      background-color: #fff; /* 컨테이너 배경색 */
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
-      border-radius: 10px;
+    width : 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+     /* 패딩 설정 */
+    background-color: #fff; /* 컨테이너 배경색 */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
+    border-radius: 10px;
+    
   }
   .notice .notice-line .inner_left .con .item {
       flex-grow: 1; /* 모든 항목이 동등하게 공간 차지 */
@@ -400,7 +401,7 @@ h1 {
       padding: 50px; /* 항목 내부 패딩 */
       font-size: 16px; /* 글자 크기 */
       color: #333; /* 글자 색상 */
-      margin-left: 50px;
+      margin-left: 30px;
   }
   
   .notice .notice-line .inner_left .con .item a{

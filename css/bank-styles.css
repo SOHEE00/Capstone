@@ -442,6 +442,7 @@ a {
     display: flex; /* Flexbox를 이용해 자식 요소를 중앙 정렬 */
     align-items: center; /* 수직 중앙 정렬 */
     justify-content: center;
+    z-index : 100%;
 }
 
 .circle img {
@@ -464,8 +465,7 @@ a {
     margin-left: 20px;
     margin-top: -10px;
     line-height: 0.8;
-    z-index: 101;
-   
+    z-index: 101;   
 }
 .text01{
     font-weight: bold;
