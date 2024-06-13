@@ -720,79 +720,77 @@ header .badges .badge{
 
 footer {
     
-    background-color: #D9D9D9;
-    background-size: 1440px;
-    
-  }
-  footer .inner {
-    padding : 40px 0 60px 0;
-  }
-  footer .menu {
-    display: flex;
-    justify-content: center;
-  }
-  footer .menu li {
-    position : relative;
-    list-style: none;
-  }
-  footer .menu li::before {
-    
-    width : 3px;
-    height: 3px;
-    background-color: #555;
-    position : absolute;
-    top : 0;
-    bottom :0;
-    right : -1px;
-    margin : auto;
-  }
-  footer .menu li:last-child::before {
-    display: none;
-  }
-  footer .menu li a {
-    color : #767676;
-    font-size : 12px;
-    font-weight: 700;
-    padding : 15px;
-    display: block;
-  }
+  background-color: #D9D9D9;
+  background-size: 1440px;
   
-  footer .btn-group {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
-  footer .btn-group .btn {
-    font-size : 12px;
-    margin-right : 10px;
-  }
-  footer .btn-group .btn:last-child {
-    margin-right : 0;
-  }
-  footer .info {
-    
-    text-align: center;
-  }
-  footer .info span {
-    margin-right: 20px;
-    color : #767676;
-    font-size : 12px;
-  }
-  footer .info span:last-child {
-    margin-right : 0;
-  }
-  footer .copyright {
-    color : #767676;
-    font-size: 12px;
-    text-align: center;
-    margin-top : 12px;
-  }
-  footer .logo {
-    float: right;
-    margin-top : -50px;
-  }
+}
+footer .inner {
+  padding : 40px 0 60px 0;
+}
+footer .menu {
+  display: flex;
+  justify-content: center;
+}
+footer .menu li {
+  position : relative;
+  list-style: none;
+}
+footer .menu li::before {
+  
+  width : 3px;
+  height: 3px;
+  background-color: #555;
+  position : absolute;
+  top : 0;
+  bottom :0;
+  right : -1px;
+  margin : auto;
+}
+footer .menu li:last-child::before {
+  display: none;
+}
+footer .menu li a {
+  color : #767676;
+  font-size : 12px;
+  font-weight: 700;
+  padding : 15px;
+  display: block;
+}
 
-
+footer .btn-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+footer .btn-group .btn {
+  font-size : 12px;
+  margin-right : 10px;
+}
+footer .btn-group .btn:last-child {
+  margin-right : 0;
+}
+footer .info {
+  
+  text-align: center;
+}
+footer .info span {
+  margin-right: 20px;
+  color : #767676;
+  font-size : 12px;
+}
+footer .info span:last-child {
+  margin-right : 0;
+}
+footer .copyright {
+  color : #767676;
+  font-size: 12px;
+  text-align: center;
+  margin-top : 12px;
+}
+footer .logo {
+  float: right;
+  margin-top : -60px;
+}
 
 
 
