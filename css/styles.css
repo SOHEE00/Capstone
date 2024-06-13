@@ -490,7 +490,7 @@ header .badges .badge{
   width : 100%;
 }
 .main03 .section .con {
-  margin : 10px;
+  margin : 90px;
   margin-left: 200px; /* 글씨를 오른쪽으로 20px 이동 */
 }
 .main03_inner .section { 
@@ -517,7 +517,6 @@ header .badges .badge{
     background-color: #fff; /* 컨테이너 배경색 */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* 그림자 효과 */
     margin: 0 auto;
-    margin-top : -20px;
     border-radius: 10px;
     
 }
@@ -529,7 +528,6 @@ header .badges .badge{
 }
 .main03_inner .notice02 .item a:hover {
   color : #252525;
-  text-decoration: underline;
   font-weight: bold;
 }
 .item {

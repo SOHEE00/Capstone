@@ -48,56 +48,6 @@ a {
   
 }
 
-body {
-  background-size: auto;
-  color : #333;
-  font-size : 16px;
-  font-weight : 400;
-  line-height : 1.4;
-  background-color: #ffff;
-  font-family: 'Noto Sans KR', sans-serif;
-
-}
-body, html {
-  margin : 0;
-  padding : 0;
-}
-h1 {
-  font-weight: bold;
-}
-p {
-  line-height : 1.8;
-  font-size : 18px;
-}
-img {
-    display: block;
-    
-}
-
-a {
-    text-decoration: none;
-    color : #3f3f3f;
-}
-.inner{
-    width : 1100px;
-    margin : 0 auto; /*가운데정렬*/
-    position : relative;
-}
-.btn1 {
-  width : 130px;
-  padding : 10px;
-  background-color: #444859;
-  border-radius: 20px;
-  color : #ffff;
-  font-size : 20px;
-  font-weight: 700;
-  text-align : center;
-  cursor : pointer;
-  box-sizing : border-box;
-  display : block;
-  
-}
-
  /*HEADER*/
  header {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
