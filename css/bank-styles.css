@@ -584,6 +584,8 @@ button {
 
 /*FOOTER*/
 
+/*FOOTER*/
+
 footer {
     
     background-color: #D9D9D9;
@@ -653,12 +655,11 @@ footer {
     text-align: center;
     margin-top : 12px;
   }
-  footer .footer-logo {
+  footer .logo {
     float: right;
-    margin-top : -100px;
+    margin-top : -60px;
   }
-
-
+  
   .inner{
     width : 1100px;
     margin : 0 auto; /*가운데정렬*/
