@@ -630,7 +630,7 @@ footer {
     
   background-color: #D9D9D9;
   background-size: 1440px;
-  
+  height: 250px;
 }
 footer .inner {
   padding : 40px 0 60px 0;
@@ -693,10 +693,10 @@ footer .copyright {
   color : #767676;
   font-size: 12px;
   text-align: center;
-  margin-top : 12px;
+  margin-top : 11px;
 }
 footer .logo {
   float: right;
-  margin-top : -100px;
-  margin-right: 400px;
+  margin-top : -105px;
+  margin-right: 401px;
 }
