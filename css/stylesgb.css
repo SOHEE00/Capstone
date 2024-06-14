@@ -219,7 +219,7 @@ header .badges .badge{
 
 .top-container {
   width: 80%;       /* 부모 요소의 크기에 상대적인 폭 설정 */
-  max-width: 1440px; /* 최대 크기 설정 */
+  /* 최대 크기 설정 */
   display: flex;
   align-items: center;
   padding: 20px;
@@ -232,8 +232,7 @@ header .badges .badge{
 .image-box {
     position: relative;
     text-align: center;
-    padding-left: 90px; /* 좌우 패딩 추가 */
-    padding-right: 90px; /* 좌우 패딩 추가 */
+    margin: 0 auto;
 }
 
 .image-box img {
@@ -248,7 +247,7 @@ header .badges .badge{
     height: 177px;
 }
 
-.image-box.large {
+.image-box-large {
     width: 451px;
     height: 306px;
 }

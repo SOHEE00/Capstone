@@ -156,20 +156,6 @@ header .badges .badge{
 }
 
 
-.btn {
-    width : 130px;
-    padding : 10px;
-    background-color: #444859;
-    border-radius: 20px;
-    color : #ffff;
-    font-size : 16px;
-    font-weight: 700;
-    text-align : center;
-    cursor : pointer;
-    box-sizing : border-box;
-    display : block;
-    
-}
 .btn1 {
     width : 130px;
     padding : 10px;

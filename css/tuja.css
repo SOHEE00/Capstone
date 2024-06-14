@@ -624,6 +624,8 @@ th {
 
 /*FOOTER*/
 
+/*FOOTER*/
+
 footer {
     
   background-color: #D9D9D9;
@@ -693,12 +695,7 @@ footer .copyright {
   text-align: center;
   margin-top : 12px;
 }
-footer .logo {
+footer .footer-logo {
   float: right;
   margin-top : -100px;
-  margin-right: 350px;
-  
 }
-
-
-

@@ -557,6 +557,8 @@ bottom : 20px;
 
 /*FOOTER*/
 
+/*FOOTER*/
+
 footer {
     
   background-color: #D9D9D9;
@@ -626,9 +628,7 @@ footer .copyright {
   text-align: center;
   margin-top : 12px;
 }
-footer .logo {
+footer .footer-logo {
   float: right;
-  margin-top : -70px;
-  
-  
+  margin-top : -100px;
 }
