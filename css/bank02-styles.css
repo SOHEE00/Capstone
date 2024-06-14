@@ -164,6 +164,7 @@ header .badges .badge{
 .btn1 {
     width : 130px;
     padding : 10px;
+    height: 48px;
     background-color: #444859;
     border-radius: 20px;
     color : #ffff;
